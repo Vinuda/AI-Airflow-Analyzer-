@@ -1,0 +1,5 @@
+{
+  "name": "Airflow Optimizer",
+  "description": "A web application that helps visualize and optimize room airflow by modeling window placements and their states. It uses AI to assess the airflow path and suggests improvements for better circulation and oxygen levels.",
+  "requestFramePermissions": []
+}
