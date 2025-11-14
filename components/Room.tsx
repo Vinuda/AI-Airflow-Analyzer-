@@ -105,7 +105,7 @@ const Room: React.FC<RoomProps> = ({ windows, onToggleWindow, onRemoveWindow, an
 
 
   return (
-    <div className="relative aspect-video w-full max-w-4xl mx-auto bg-black rounded-lg shadow-2xl overflow-hidden">
+    <div className="relative aspect-video w-full max-w-4xl mx-auto bg-black rounded-lg shadow-2xl overflow-hidden border border-gray-800">
       <svg
         ref={svgRef}
         viewBox="0 0 100 100"
@@ -115,7 +115,7 @@ const Room: React.FC<RoomProps> = ({ windows, onToggleWindow, onRemoveWindow, an
         onMouseLeave={handleMouseUp}
         onClick={handleSVGClick}
       >
-        <polygon points={pointsString} className="fill-slate-800 stroke-slate-600" strokeWidth="0.5" />
+        <polygon points={pointsString} className="fill-[#111] stroke-gray-700" strokeWidth="0.5" />
 
         {/* Airflow Visualization */}
         {analysis && analysis.flowPaths && (
@@ -161,14 +161,14 @@ const Room: React.FC<RoomProps> = ({ windows, onToggleWindow, onRemoveWindow, an
 
         {/* Instruction Text */}
         {!isEditing && windows.length === 0 && (
-           <g className="pointer-events-none select-none" opacity="0.8">
-                <text x={roomCenter.x} y={roomCenter.y} textAnchor="middle" dominantBaseline="middle" className="fill-gray-300 font-semibold" style={{ fontSize: '2.8px' }}>
+           <g className="pointer-events-none select-none" opacity="0.6">
+                <text x={roomCenter.x} y={roomCenter.y} textAnchor="middle" dominantBaseline="middle" className="fill-gray-400 font-semibold" style={{ fontSize: '2.8px' }}>
                     Click on a wall to add a window
                 </text>
             </g>
         )}
          {isEditing && (
-             <text x="50" y="50" textAnchor="middle" className="fill-gray-400 font-bold text-[5px] select-none pointer-events-none">
+             <text x="50" y="50" textAnchor="middle" className="fill-gray-500 font-bold text-[5px] select-none pointer-events-none">
                 Drag the circles to change the room shape
              </text>
         )}

@@ -64,18 +64,15 @@ const App: React.FC = () => {
   }, [windows, roomPoints, isEditingRoom]);
 
   return (
-    <div className="min-h-screen bg-[#0D1117] text-gray-300 font-sans p-4 sm:p-6 lg:p-8">
+    <div className="min-h-screen bg-black text-gray-300 font-sans p-4 sm:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white tracking-tight">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 sm:w-12 sm:h-12 inline-block -mt-2 mr-2">
-                <path d="M12 2.5c-5.25 0-9.5 4.25-9.5 9.5s4.25 9.5 9.5 9.5a1 1 0 000-2c-4.14 0-7.5-3.36-7.5-7.5S7.86 4.5 12 4.5a1 1 0 000-2z"></path>
-                <path d="M21.5 12a1 1 0 00-1-1h-16a1 1 0 000 2h16a1 1 0 001-1zM6.5 7a1 1 0 00-1-1h-3a1 1 0 100 2h3a1 1 0 001-1zM10.5 17a1 1 0 00-1-1h-7a1 1 0 100 2h7a1 1 0 001-1z"></path>
-            </svg>
+          <h1 className="font-serif-display text-4xl sm:text-5xl font-normal text-white tracking-wider flex items-center justify-center">
+             <span className="text-6xl sm:text-7xl -mt-2 mr-3 font-serif-display" style={{fontStyle: 'italic'}}>γ</span>
              Airflow Optimizer
           </h1>
-          <p className="mt-2 text-lg text-gray-400 max-w-2xl mx-auto">
-            Design your room's shape, place windows, and let our AI analyze the best configuration for optimal airflow.
+          <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">
+            Design your room, place windows, and let AI analyze the best configuration for optimal airflow.
           </p>
         </header>
 
