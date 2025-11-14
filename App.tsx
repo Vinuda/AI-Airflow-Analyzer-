@@ -68,7 +68,7 @@ const App: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-8">
           <h1 className="font-serif-display text-4xl sm:text-5xl font-normal text-white tracking-wider flex items-center justify-center">
-             <span className="text-6xl sm:text-7xl -mt-2 mr-3 font-serif-display" style={{fontStyle: 'italic'}}>γ</span>
+             <span className="font-serif-display mr-4">γ</span>
              Airflow Optimizer
           </h1>
           <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">

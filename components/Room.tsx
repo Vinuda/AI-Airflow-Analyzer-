@@ -105,7 +105,7 @@ const Room: React.FC<RoomProps> = ({ windows, onToggleWindow, onRemoveWindow, an
 
 
   return (
-    <div className="relative aspect-video w-full max-w-4xl mx-auto bg-black rounded-lg shadow-2xl overflow-hidden border border-gray-800">
+    <div className="relative aspect-video w-full max-w-4xl mx-auto bg-gray-900/50 rounded-lg shadow-2xl overflow-hidden border border-gray-800">
       <svg
         ref={svgRef}
         viewBox="0 0 100 100"
@@ -115,7 +115,7 @@ const Room: React.FC<RoomProps> = ({ windows, onToggleWindow, onRemoveWindow, an
         onMouseLeave={handleMouseUp}
         onClick={handleSVGClick}
       >
-        <polygon points={pointsString} className="fill-[#111] stroke-gray-700" strokeWidth="0.5" />
+        <polygon points={pointsString} className="fill-[#111] stroke-gray-600" strokeWidth="0.5" />
 
         {/* Airflow Visualization */}
         {analysis && analysis.flowPaths && (

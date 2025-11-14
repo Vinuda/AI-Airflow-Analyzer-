@@ -40,15 +40,15 @@ const WindowIcon: React.FC<WindowIconProps> = ({ position, isOpen, onClick, onRe
         <rect
             x={-size / 2} y={-size / 2} width={size} height={size}
             rx="0.5"
-            className={`transition-colors duration-300 stroke-black group-hover:stroke-white ${isOpen ? 'fill-white' : 'fill-gray-700'}`}
+            className={`transition-colors duration-300 stroke-black group-hover:stroke-white ${isOpen ? 'fill-white' : 'fill-gray-800'}`}
             strokeWidth="0.3"
         />
 
         {/* Panes */}
-        <rect x={-size / 2 + 0.2} y={-size / 2 + 0.2} width={paneSize} height={paneSize} rx="0.2" className={`transition-opacity duration-300 ${isOpen ? 'fill-slate-300/30' : 'fill-gray-600/50'}`} />
-        <rect x={0.2} y={-size / 2 + 0.2} width={paneSize} height={paneSize} rx="0.2" className={`transition-opacity duration-300 ${isOpen ? 'fill-slate-300/30' : 'fill-gray-600/50'}`} />
-        <rect x={-size / 2 + 0.2} y={0.2} width={paneSize} height={paneSize} rx="0.2" className={`transition-opacity duration-300 ${isOpen ? 'fill-slate-300/30' : 'fill-gray-600/50'}`} />
-        <rect x={0.2} y={0.2} width={paneSize} height={paneSize} rx="0.2" className={`transition-opacity duration-300 ${isOpen ? 'fill-slate-300/30' : 'fill-gray-600/50'}`} />
+        <rect x={-size / 2 + 0.2} y={-size / 2 + 0.2} width={paneSize} height={paneSize} rx="0.2" className={`transition-opacity duration-300 ${isOpen ? 'fill-slate-300/30' : 'fill-gray-700/50'}`} />
+        <rect x={0.2} y={-size / 2 + 0.2} width={paneSize} height={paneSize} rx="0.2" className={`transition-opacity duration-300 ${isOpen ? 'fill-slate-300/30' : 'fill-gray-700/50'}`} />
+        <rect x={-size / 2 + 0.2} y={0.2} width={paneSize} height={paneSize} rx="0.2" className={`transition-opacity duration-300 ${isOpen ? 'fill-slate-300/30' : 'fill-gray-700/50'}`} />
+        <rect x={0.2} y={0.2} width={paneSize} height={paneSize} rx="0.2" className={`transition-opacity duration-300 ${isOpen ? 'fill-slate-300/30' : 'fill-gray-700/50'}`} />
     </g>
   );
 };

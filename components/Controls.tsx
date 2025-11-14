@@ -14,17 +14,17 @@ const Controls: React.FC<ControlsProps> = ({ onAnalyze, isLoading, isEditing, on
       <div className="flex flex-wrap items-center gap-3">
         <button
           onClick={onToggleEditing}
-          className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-200 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-white/50 ${
+          className={`px-6 py-2 rounded-full text-sm font-light tracking-wide transition-colors duration-200 text-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-gray-500 ${
             isEditing
-              ? 'border border-white bg-white/10'
-              : 'border border-gray-600 hover:border-white hover:bg-white/10'
+              ? 'border border-gray-400 bg-gray-800/50'
+              : 'border border-gray-700 hover:border-gray-400'
           }`}
         >
           {isEditing ? 'Done Editing' : 'Edit Room'}
         </button>
         <button
           onClick={onReset}
-          className="px-6 py-2 rounded-full text-sm font-semibold transition-colors border border-gray-600 text-white hover:border-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-white/50"
+          className="px-6 py-2 rounded-full text-sm font-light tracking-wide transition-colors border border-gray-700 text-gray-300 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-gray-500"
         >
           Reset
         </button>
@@ -32,7 +32,7 @@ const Controls: React.FC<ControlsProps> = ({ onAnalyze, isLoading, isEditing, on
       <button
         onClick={onAnalyze}
         disabled={isLoading || isEditing}
-        className="w-full sm:w-auto px-8 py-3 bg-white text-black font-bold rounded-full hover:bg-gray-300 transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-white disabled:bg-gray-800 disabled:text-gray-500 disabled:border-gray-700 disabled:cursor-not-allowed disabled:scale-100 flex items-center justify-center gap-2"
+        className="w-full sm:w-auto px-8 py-3 bg-white text-black font-bold rounded-full hover:bg-gray-300 transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-white disabled:bg-gray-800 disabled:text-gray-500 disabled:cursor-not-allowed disabled:scale-100 flex items-center justify-center gap-2"
       >
         {isLoading ? (
           <>

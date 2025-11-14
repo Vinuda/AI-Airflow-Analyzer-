@@ -10,18 +10,18 @@ interface AnalysisPanelProps {
 
 const LoadingSkeleton: React.FC = () => (
     <div className="animate-pulse space-y-4">
-        <div className="h-4 bg-gray-800 rounded w-1/3"></div>
-        <div className="h-3 bg-gray-800 rounded w-full"></div>
-        <div className="h-3 bg-gray-800 rounded w-5/6"></div>
-        <div className="h-4 bg-gray-800 rounded w-1/4 mt-6"></div>
-        <div className="h-3 bg-gray-800 rounded w-full"></div>
-        <div className="h-3 bg-gray-800 rounded w-full"></div>
+        <div className="h-4 bg-gray-900 rounded w-1/3"></div>
+        <div className="h-3 bg-gray-900 rounded w-full"></div>
+        <div className="h-3 bg-gray-900 rounded w-5/6"></div>
+        <div className="h-4 bg-gray-900 rounded w-1/4 mt-6"></div>
+        <div className="h-3 bg-gray-900 rounded w-full"></div>
+        <div className="h-3 bg-gray-900 rounded w-full"></div>
     </div>
 );
 
 const AnalysisPanel: React.FC<AnalysisPanelProps> = ({ analysis, isLoading, error }) => {
   return (
-    <div className="bg-transparent p-6 rounded-lg border border-gray-700 h-full">
+    <div className="bg-transparent p-6 rounded-lg border border-gray-800 h-full">
       <h2 className="text-2xl font-serif-display font-normal text-white mb-4">AI Analysis</h2>
       
       {isLoading && <LoadingSkeleton />}
